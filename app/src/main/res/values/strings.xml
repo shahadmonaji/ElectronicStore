@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ElectronicStore</string>
+<!--    itemes name -->
+    <string name="item1">Notebook SELFLOVE</string>
+    <string name="item2">Guitar panel</string>
+    <string name="item3">Artist Totebag</string>
+    <string name="item4">Ms.Plant</string>
+    <string name="item5">Familiarity panel</string>
+    <string name="item6">Self Care NoteBook</string>
+    <string name="item7">Self Love NoteBook</string>
+    <string name="item8">May the road in front of you rain and green</string>
+    <string name="item9">Lighthouse NoteBook</string>
+
+<!--    The price-->
+    <string name="item11">16 SAR</string>
+    <string name="item12">11 SAR</string>
+    <string name="item13">10 SAR</string>
+    <string name="item14">16 SAR</string>
+    <string name="item15">11 SAR</string>
+    <string name="item16">15 SAR</string>
+    <string name="item17">20 SAR</string>
+    <string name="item18">9 SAR</string>
+    <string name="item19">15 SAR</string>
+
+<!--    msg-->
+    <string name="massage">Added to the card successfully!!</string>
+
+</resources>
