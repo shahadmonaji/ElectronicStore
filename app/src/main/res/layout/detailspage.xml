@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+
     android:layout_margin="5dp"
     app:cardCornerRadius="15dp"
     app:cardElevation="8dp">
 
     <LinearLayout
+app:layout_constraintEnd_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
             android:id="@+id/item_img"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="250dp"
             android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@drawable/BookMark1" />
 
         <TextView
             android:id="@+id/item_title"
@@ -29,16 +33,18 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="Hello" />
+            android:text="Notebook SELFLOVE"
+            />
 
         <TextView
+
             android:id="@+id/item_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textColor="@color/black"
             android:textSize="12dp"
-            tools:text="Hello" />
+            android:text="16 SAR" />
 
 
     </LinearLayout>
@@ -48,32 +54,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="300dp"
-        android:padding="16dp">
+       android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/beige"
-        android:drawableRight="@drawable/ic_baseline_add_shopping_cart_24"
-        android:text="Add To Card"
-        android:textSize="12dp">
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/beige"
+            android:drawableRight="@drawable/ic_baseline_add_shopping_cart_24"
+            android:text="Add To Card"
+            android:textSize="12dp">
 
-    </Button>
+        </Button>
 
 
         <Button
-            android:drawableRight="@drawable/ic_share"
-            android:text="Share"
-            android:backgroundTint="@color/beige"
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp" />
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="20dp"
+
+
+            android:backgroundTint="@color/beige"
+            android:drawableRight="@drawable/ic_share"
+            android:text="Share" />
 
     </LinearLayout>
-
-</com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
